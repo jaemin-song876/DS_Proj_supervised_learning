@@ -1,0 +1,60 @@
+# 😷 Mask-Wearing Behavior Prediction Using Survey Data
+
+## 📌 Objective
+
+The goal of this project is to use statistical learning models to predict **how often individuals wear a mask in public settings**, based on their survey responses. This allows us to understand behavioral patterns and psychological factors that influence mask usage.
+
+---
+
+## 🦠 Background
+
+Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Since early 2020, the pandemic has affected every locality in the world, leading to multiple waves of infection.
+
+During the initial phase of the outbreak, three major public health recommendations were promoted:
+
+1. Wearing a mask  
+2. Washing hands  
+3. Practicing social distancing (especially indoors)
+
+Among these, **mask-wearing** became the most discussed and scrutinized topic—especially in the U.S.—due to mixed messages from officials and differing local policies. As a result, **mask-wearing behavior varied across regions and individuals**.
+
+---
+
+## 📊 Data Description
+
+The dataset is based on a **survey conducted among Texas A&M University students** during the early stages of the COVID-19 pandemic. It captures various aspects of mask-wearing behavior, including:
+
+- Perceived benefits and risks  
+- Social norms and peer influence  
+- Sense of autonomy or external pressure  
+- Observations of others’ behavior
+
+### 🔹 Data Format
+
+- **Input variables:** 151 survey questions (each representing a unique behavioral or perceptual item)
+- **Output variable:**  
+  Mask-wearing frequency categorized into:
+  - `Rarely` (includes responses like Never, Rarely, and Sometimes)
+  - `Most of the Time`
+  - `Always`
+
+- The second row in the data file contains the **full question text** and **answer choices** for each variable.
+
+---
+
+## 🧠 Methods
+
+- 📦 **Data Preprocessing**: Handling categorical variables, missing values, and label encoding  
+- 🔍 **Exploratory Data Analysis**: Distribution of responses, correlation patterns  
+- 🤖 **Modeling Approaches**:
+  - Logistic regression
+  - Support Vector Machines (SVM)
+  - Decision Trees / Random Forests
+  - Multiclass classification techniques
+
+- 📈 **Model Evaluation**: Accuracy, confusion matrix, and interpretation of key features
+
+---
+
+## 📁 Repository Structure
+
