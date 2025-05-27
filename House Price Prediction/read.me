@@ -1,0 +1,79 @@
+# 🏘️ Boston Housing Price Prediction (1970)
+
+## 📄 Project Overview
+
+This project simulates a scenario in 1970 where you are hired as a data consultant for a real estate company in Boston. The objective is to build a regression model that helps the company assess whether a customer’s budget aligns with expected housing prices based on their preferences.
+
+We use the **Boston Housing dataset** from the `ISLP` package, which contains data for 506 suburbs of Boston and 13 predictor variables per area.
+
+The model predicts the **log-transformed median house value** (`log(medv)`) as the response variable.
+
+---
+
+## 🎯 Objective
+
+- Build a predictive model for `log(medv)` using structural, accessibility, and neighborhood-related features.
+- Identify key features that influence house prices.
+- Use model diagnostics and selection techniques to choose a final model.
+- Provide an executive summary for business stakeholders.
+
+---
+
+## 📦 Data Source
+
+- Dataset: `Boston` (from the [ISLP package](https://islp.readthedocs.io/en/latest/datasets/Boston.html))
+- Observations: 506 suburbs
+- Features: 13 variables including crime rate, room number, distance to employment centers, etc.
+
+---
+
+## 🔍 Features Considered
+
+The following categories and variables were specifically examined:
+
+### 1. 🏗️ Structural Properties
+- `age` – Proportion of owner-occupied units built prior to 1940
+- `rm` – Average number of rooms per dwelling
+- `zn` – Proportion of residential land zoned for large lots
+
+### 2. 🚗 Accessibility
+- `dis` – Weighted distance to five Boston employment centers
+- `rad` – Index of accessibility to radial highways
+
+### 3. 🏘️ Neighborhood Characteristics
+- `crim` – Per capita crime rate by town
+- `chas` – Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+- `ptratio` – Pupil–teacher ratio by town
+
+Additional variables were also considered to improve model performance.
+
+---
+
+## 📊 Methodology
+
+- Applied **log transformation** to the target variable (`medv`) for better model fit.
+- Explored relationships via pair plots and correlation heatmaps.
+- Built multiple linear regression models using `statsmodels` and `scikit-learn`.
+- Performed feature selection based on AIC, BIC, and adjusted R².
+- Validated model with residual analysis and normality checks.
+
+---
+
+## ✅ Final Model Summary
+
+The final regression model includes key variables from all three categories, offering both interpretability and strong predictive power. See the `report.pdf` for detailed regression output and executive summary.
+
+---
+
+## 📈 How to Run
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/boston-housing-1970.git
+cd boston-housing-1970
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run analysis
+python analysis.py
