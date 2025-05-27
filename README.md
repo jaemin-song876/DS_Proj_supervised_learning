@@ -1,1 +1,1 @@
-# DS_Proj_supervised
+# DS_Project_supervised_learning
